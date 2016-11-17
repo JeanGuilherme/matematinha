@@ -21,9 +21,9 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li class="active"><a href="#">Calculadora 1</a></li>
-        <li class="active"><a href="#">Calculadora 2</a></li>
-        <li class="active"><a href="#">Calculadora 3</a></li>
+        <li class=""><a href="#">Calculadora 1</a></li>
+        <li class=""><a href="#">Calculadora 2</a></li>
+        <li class=""><a href="#">Calculadora 3</a></li>
         <li class="has-dropdown">
           <a href="#">Dropdown</a>
           <ul class="dropdown">
@@ -36,15 +36,30 @@
   </nav>
   <form>
     <div class="row">
-      <div class="small-6 columns center">
-      <h1>Teste 1</h1>
-
-      </div>
-      <div class="small-6 columns center">
-      <h1>Teste 2</h1>
-
+    <div class="small-12 medium-12 columns center">
+        <h1>Calculadora</h1>
+        <input type="text" name="Valor Financiado" placeholder="Valor Financiado" class="small-12 medium-5 columns">
+        <input type="text" name="Valor de Entrada" placeholder="Valor de Entrada" class="small-12 medium-5 columns">
+        <input type="text" name="Nº de Prestações" placeholder="Nº de Prestações" class="small-12 medium-5 columns">
+        <input type="date" name="Data de Vencimento" placeholder="Taxa de Juros" class="small-12 medium-5 columns">
+        
+        <select>
+        <option>Periodo de Juros</option>
+          <option>Mensal</option>
+          <option>Anual</option>
+        </select>
+        <select>
+        <option>Sistema</option>
+          <option>Price</option>
+          <option>SAC</option>
+        </select>
       </div>
     </div>
+    <dir class="row">
+      <div class="small-12">
+        <input type="submit" name="Calcular" value="Calcular" class="submit">
+      </div>
+    </dir>
   </form>
 
 
